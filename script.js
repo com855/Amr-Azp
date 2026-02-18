@@ -1,3 +1,30 @@
+// Initialize Swiper للعرض الأفقي
+document.addEventListener('DOMContentLoaded', function() {
+    if (document.querySelector('.workSwiper')) {
+        new Swiper('.workSwiper', {
+            slidesPerView: 1,
+            spaceBetween: 30,
+            loop: true,
+            autoplay: {
+                delay: 3000,
+                disableOnInteraction: false,
+                pauseOnMouseEnter: true,
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            grabCursor: false,
+            speed: 600,
+            effect: 'slide',
+        });
+    }
+});
+
 // Initialize AOS
 AOS.init({
     duration: 800,
@@ -15,7 +42,6 @@ if (navToggle) {
         navToggle.classList.toggle('active');
         navMenu.classList.toggle('active');
         
-        // Animate hamburger
         const spans = navToggle.querySelectorAll('span');
         if (navToggle.classList.contains('active')) {
             spans[0].style.transform = 'rotate(45deg) translate(8px, 8px)';
@@ -29,13 +55,11 @@ if (navToggle) {
     });
 }
 
-// Close mobile menu when clicking a link
 document.querySelectorAll('.nav-link').forEach(link => {
     link.addEventListener('click', () => {
         navToggle.classList.remove('active');
         navMenu.classList.remove('active');
         
-        // Reset hamburger
         const spans = navToggle.querySelectorAll('span');
         spans[0].style.transform = 'none';
         spans[1].style.opacity = '1';
@@ -43,20 +67,18 @@ document.querySelectorAll('.nav-link').forEach(link => {
     });
 });
 
-// Navbar scroll effect
 window.addEventListener('scroll', () => {
     const navbar = document.querySelector('.navbar');
     if (window.scrollY > 50) {
-        navbar.style.background = 'rgba(3, 3, 5, 0.95)';
-        navbar.style.backdropFilter = 'blur(10px)';
-        navbar.style.borderBottom = '1px solid rgba(0, 255, 136, 0.1)';
+        navbar.style.background = 'rgba(10, 10, 10, 0.9)';
+        navbar.style.backdropFilter = 'blur(12px)';
+        navbar.style.borderBottom = '1px solid rgba(0, 255, 136, 0.2)';
     } else {
-        navbar.style.background = 'rgba(3, 3, 5, 0.8)';
-        navbar.style.borderBottom = '1px solid rgba(255, 255, 255, 0.05)';
+        navbar.style.background = 'rgba(10, 10, 10, 0.7)';
+        navbar.style.borderBottom = '1px solid rgba(0, 255, 136, 0.1)';
     }
 });
 
-// Smooth scroll for navigation links
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
         e.preventDefault();
@@ -70,7 +92,6 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
-// Active link highlighting
 const sections = document.querySelectorAll('section');
 const navLinks = document.querySelectorAll('.nav-link');
 
@@ -93,22 +114,4 @@ window.addEventListener('scroll', () => {
             link.classList.add('active');
         }
     });
-});
-
-// Add animation to cards on scroll
-const observerOptions = {
-    threshold: 0.1,
-    rootMargin: '0px'
-};
-
-const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-        if (entry.isIntersecting) {
-            entry.target.classList.add('in-view');
-        }
-    });
-}, observerOptions);
-
-document.querySelectorAll('.service-card, .expertise-card, .distinction-card').forEach(card => {
-    observer.observe(card);
 });
