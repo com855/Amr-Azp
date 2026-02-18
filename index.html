@@ -2,23 +2,26 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
     <title>Amr Azp · Performance Marketer</title>
     <!-- Font Awesome 6 -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <!-- Google Fonts (Outfit + Space Grotesk) -->
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <!-- AOS Animation Library -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- Custom CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Animated Background -->
-    <div class="gradient-bg">
-        <div class="gradient-1"></div>
-        <div class="gradient-2"></div>
-        <div class="gradient-3"></div>
+    <!-- Animated Background with Green Accents -->
+    <div class="tech-bg">
+        <div class="green-orb orb-1"></div>
+        <div class="green-orb orb-2"></div>
+        <div class="green-orb orb-3"></div>
+        <div class="grid-particles"></div>
         <div class="noise-overlay"></div>
     </div>
 
@@ -29,7 +32,7 @@
             <ul class="nav-menu">
                 <li><a href="#home" class="nav-link active">Home</a></li>
                 <li><a href="#expertise" class="nav-link">Expertise</a></li>
-                <li><a href="#approach" class="nav-link">Approach</a></li>
+                <li><a href="#work" class="nav-link">Work</a></li>
                 <li><a href="#contact" class="nav-link">Contact</a></li>
             </ul>
             <div class="nav-toggle">
@@ -44,10 +47,10 @@
         <!-- Hero Section -->
         <section id="home" class="hero">
             <div class="container hero-container">
-                <div class="hero-content" data-aos="fade-up" data-aos-duration="1000">
-                    <span class="hero-badge pulse">Performance Marketer</span>
+                <div class="hero-content" data-aos="fade-right" data-aos-duration="1000">
+                    <span class="hero-badge pulse-green">Performance Marketer</span>
                     <h1 class="hero-title">
-                        <span class="hero-name">Amr Azp Elsayed </span>
+                        <span class="hero-name">Amr Azp Elsayed Azp</span>
                         <span class="hero-role">Mid-Level Performance Marketer | Media Buyer</span>
                     </h1>
                     <p class="hero-description">
@@ -93,8 +96,8 @@
         <section class="services">
             <div class="container">
                 <div class="section-header" data-aos="fade-up">
-                    <span class="section-subtitle">What I Do</span>
-                    <h2 class="section-title">Performance Marketing <span class="title-accent">Expertise</span></h2>
+                    <span class="section-subtitle green-text">What I Do</span>
+                    <h2 class="section-title">Performance Marketing <span class="title-accent green">Expertise</span></h2>
                 </div>
                 <div class="services-grid">
                     <div class="service-card" data-aos="flip-left" data-aos-delay="100">
@@ -154,8 +157,8 @@
         <section id="expertise" class="expertise">
             <div class="container">
                 <div class="section-header" data-aos="fade-up">
-                    <span class="section-subtitle">Core Expertise</span>
-                    <h2 class="section-title">Professional <span class="title-accent">Skills</span></h2>
+                    <span class="section-subtitle green-text">Core Expertise</span>
+                    <h2 class="section-title">Professional <span class="title-accent green">Skills</span></h2>
                 </div>
                 <div class="expertise-wrapper">
                     <div class="expertise-grid">
@@ -201,12 +204,75 @@
             </div>
         </section>
 
+        <!-- Work Results Section (معرض أفقي مع الصور) -->
+        <section id="work" class="work-showcase">
+            <div class="container">
+                <div class="section-header" data-aos="fade-up">
+                    <span class="section-subtitle green-text">Results</span>
+                    <h2 class="section-title">Work <span class="title-accent green">Showcase</span></h2>
+                </div>
+                <div class="work-slider-horizontal" data-aos="fade-up" data-aos-delay="100">
+                    <div class="swiper workSwiper">
+                        <div class="swiper-wrapper">
+                            <!-- Slide 1 -->
+                            <div class="swiper-slide">
+                                <div class="work-card">
+                                    <img src="https://i.ibb.co/7tdF2Ghh/IMG-20260214-WA0001.jpg" alt="Work Result 1">
+                                </div>
+                            </div>
+                            <!-- Slide 2 -->
+                            <div class="swiper-slide">
+                                <div class="work-card">
+                                    <img src="https://i.ibb.co/Dfsjg06w/IMG-20260215-WA0001.jpg" alt="Work Result 2">
+                                </div>
+                            </div>
+                            <!-- Slide 3 -->
+                            <div class="swiper-slide">
+                                <div class="work-card">
+                                    <img src="https://i.ibb.co/mVz9b2Xj/IMG-20260215-WA0000.jpg" alt="Work Result 3">
+                                </div>
+                            </div>
+                            <!-- Slide 4 -->
+                            <div class="swiper-slide">
+                                <div class="work-card">
+                                    <img src="https://i.ibb.co/B2HVZbZb/IMG-20260214-WA0004.jpg" alt="Work Result 4">
+                                </div>
+                            </div>
+                            <!-- Slide 5 -->
+                            <div class="swiper-slide">
+                                <div class="work-card">
+                                    <img src="https://i.ibb.co/zV4bP0dR/IMG-20260214-WA0000.jpg" alt="Work Result 5">
+                                </div>
+                            </div>
+                            <!-- Slide 6 -->
+                            <div class="swiper-slide">
+                                <div class="work-card">
+                                    <img src="https://i.ibb.co/BVpGmjPN/IMG-20260214-WA0003.jpg" alt="Work Result 6">
+                                </div>
+                            </div>
+                            <!-- Slide 7 -->
+                            <div class="swiper-slide">
+                                <div class="work-card">
+                                    <img src="https://i.ibb.co/Fb7XGY7F/IMG-20260214-WA0002.jpg" alt="Work Result 7">
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Navigation Buttons -->
+                        <div class="swiper-button-next green-nav"></div>
+                        <div class="swiper-button-prev green-nav"></div>
+                        <!-- Pagination -->
+                        <div class="swiper-pagination green-pagination"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <!-- Distinction Section -->
         <section id="approach" class="distinction">
             <div class="container">
                 <div class="section-header" data-aos="fade-up">
-                    <span class="section-subtitle">What Sets Me Apart</span>
-                    <h2 class="section-title">Unique <span class="title-accent">Advantages</span></h2>
+                    <span class="section-subtitle green-text">What Sets Me Apart</span>
+                    <h2 class="section-title">Unique <span class="title-accent green">Advantages</span></h2>
                 </div>
                 <div class="distinction-grid">
                     <div class="distinction-card" data-aos="flip-right" data-aos-delay="100">
@@ -241,11 +307,11 @@
         <section id="contact" class="contact">
             <div class="container">
                 <div class="section-header" data-aos="fade-up">
-                    <span class="section-subtitle">Let's Connect</span>
-                    <h2 class="section-title">Get In <span class="title-accent">Touch</span></h2>
+                    <span class="section-subtitle green-text">Let's Connect</span>
+                    <h2 class="section-title">Get In <span class="title-accent green">Touch</span></h2>
                 </div>
-                <div class="contact-wrapper" data-aos="zoom-in">
-                    <p class="contact-text">Have a project or want to discuss performance marketing? Reach out directly:</p>
+                <div class="contact-wrapper">
+                    <p class="contact-text">Interested in working together? Let's discuss your project on WhatsApp.</p>
                     <div class="contact-buttons">
                         <a href="mailto:amrazp1233@gmail.com" class="contact-btn email-btn">
                             <i class="fas fa-envelope"></i>
@@ -264,11 +330,12 @@
     <footer>
         <div class="container">
             <p class="copyright">© 2026 Amr Azp Elsayed Azp — All rights reserved</p>
-            <p class="developer-credit">تم التطوير بواسطة <span class="developer-name">Eng Kareem Ahmed</span> <i class="fas fa-code"></i></p>
+            <p class="developer-credit">تم التطوير بواسطة <span class="developer-name green">Eng Kareem Ahmed</span> <i class="fas fa-code"></i></p>
         </div>
     </footer>
 
     <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="script.js"></script>
 </body>
