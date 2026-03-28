@@ -1202,3 +1202,35 @@ footer {
         font-size: 1rem;
     }
 }
+
+/* ===== Service Features (لخدمة Google Ads) ===== */
+.service-features {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: 1rem;
+    justify-content: center;
+}
+
+.service-features span {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.3rem;
+    background: rgba(0, 255, 136, 0.1);
+    padding: 0.3rem 0.8rem;
+    border-radius: 50px;
+    font-size: 0.7rem;
+    color: var(--green);
+    border: 1px solid rgba(0, 255, 136, 0.2);
+    transition: all 0.3s;
+}
+
+.service-features span i {
+    font-size: 0.7rem;
+    margin: 0;
+}
+
+.service-card:hover .service-features span {
+    background: rgba(0, 255, 136, 0.2);
+    border-color: var(--green);
+}
